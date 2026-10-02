@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saarthak &amp; Ananya — 13 March 2027</title>
+  <meta name="description" content="Saarthak and Ananya are getting married at Shah Namkeen, 188 Gopal Park, Chander Nagar, Delhi 110051.">
+  <meta name="theme-color" content="#f3eee6">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%237a3042' width='64' height='64' rx='12'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia' font-size='22' fill='%23f6f1e8'%3ES%26A%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("saarthak-theme");
+        var theme = saved === "dark" || saved === "light"
+          ? saved
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (error) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Figtree:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top">S <em>&amp;</em> A</a>
+    <div class="nav__end">
+      <button class="theme-btn" id="theme-btn" type="button" aria-pressed="false">Dark</button>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="menu" class="menu">
+        <a href="#story">Story</a>
+        <a href="#schedule">Weekend</a>
+        <a href="#venue">Venue</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#party">Party</a>
+        <a href="#rsvp" class="menu__rsvp">RSVP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__copy">
+        <p class="kicker">Together with their families</p>
+        <h1>
+          <span>Saarthak</span>
+          <em>&amp;</em>
+          <span>Ananya</span>
+        </h1>
+        <p class="hero__line">are getting married</p>
+        <p class="hero__meta">
+          <span>Saturday, 13 March 2027</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Delhi</span>
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--fill" href="#rsvp">RSVP by 15 January</a>
+          <a class="btn btn--ghost" href="#schedule">See the weekend</a>
+          <button class="btn btn--text" id="cal-btn" type="button">Add to calendar</button>
+        </div>
+        <div class="count" aria-label="Countdown to the ceremony">
+          <div><strong id="count-days">—</strong><span>Days</span></div>
+          <div><strong id="count-hours">—</strong><span>Hours</span></div>
+          <div><strong id="count-mins">—</strong><span>Minutes</span></div>
+          <div><strong id="count-secs">—</strong><span>Seconds</span></div>
+        </div>
+      </div>
+
+      <div class="collage">
+        <article class="ph ph--photo ph--tall">
+          <img src="IMAGES/web/JSS_1046.JPG" alt="A couple standing together at the celebration">
+          <span class="ph__caption">Together</span>
+        </article>
+        <article class="ph ph--photo">
+          <img src="IMAGES/web/JSS_1054.JPG" alt="A little girl in a cream tulle dress">
+          <span class="ph__caption">Little guest</span>
+        </article>
+        <article class="ph ph--photo ph--wide ph--scene">
+          <img src="IMAGES/web/JSS_1044.JPG" alt="Lanterns glowing along a wall of green plants">
+          <span class="ph__caption">Evening lights</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="invite">
+      <div class="wrap invite__card">
+        <p class="eyebrow">The invitation</p>
+        <p class="invite__text">
+          Mr Rajesh Mehra &amp; Mrs Leela Mehra<br>
+          and<br>
+          Mr Arun Iyer &amp; Mrs Kavita Iyer
+        </p>
+        <p class="invite__lead">request the pleasure of your company at the wedding of their children</p>
+        <p class="invite__names">Saarthak Mehra <em>&amp;</em> Ananya Iyer</p>
+        <p class="invite__when">Friday 12 March through Sunday 14 March 2027<br>Shah Namkeen, Chander Nagar, Delhi</p>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">01 — Our story</p>
+          <h2>Four chapters, one long yes</h2>
+        </header>
+        <ol class="story">
+          <li>
+            <div class="ph ph--photo">
+              <img src="IMAGES/web/JSS_1058.JPG" alt="Two women standing with a little girl in front of flowers and balloons">
+            </div>
+            <div>
+              <p class="when">June 2019</p>
+              <h3>A table by the window</h3>
+              <p>Ananya ducked into a Fort bookshop to wait out a Mumbai downpour and found Saarthak debating a translation of Kabir with the owner. They shared the last dry table, then a cab, then a number each of them saved under the wrong name.</p>
+            </div>
+          </li>
+          <li>
+            <div class="ph ph--photo">
+              <img src="IMAGES/web/JSS_1062.JPG" alt="Two women hugging in front of a flower wall">
+            </div>
+            <div>
+              <p class="when">November 2021</p>
+              <h3>The overnight train</h3>
+              <p>They took the train to Jaipur with a hotel booked for exactly one night. They still disagree about who got them lost past Hawa Mahal. They agree it was the best wrong turn either of them has taken.</p>
+            </div>
+          </li>
+          <li>
+            <div class="ph ph--photo">
+              <img src="IMAGES/web/JSS_1071.JPG" alt="An older couple holding hands in front of the flower wall">
+            </div>
+            <div>
+              <p class="when">18 November 2024</p>
+              <h3>Before the sentence ended</h3>
+              <p>At Nahargarh Fort, just as the light left the hills, Saarthak asked. Ananya said yes before he finished, which he still pretends to mind. The ring was in his jacket the whole weekend. The jacket was on a chair.</p>
+            </div>
+          </li>
+          <li>
+            <div class="ph ph--photo">
+              <img src="IMAGES/web/JSS_1052.JPG" alt="A man seated in a blue chair in front of a flower wall">
+            </div>
+            <div>
+              <p class="when">March 2027</p>
+              <h3>By the water</h3>
+              <p>They are marrying at Shah Namkeen in Delhi, with both families, a long dinner, and enough music to keep the street awake. You are the guest list they argued over happily.</p>
+            </div>
+          </li>
+        </ol>
+        <blockquote class="pull">
+          “We chose one shop in Chander Nagar, a long weekend, and all of you.”
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="schedule" class="section section--tint">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">02 — The weekend</p>
+          <h2>Five gatherings, one invitation</h2>
+          <p class="lede">Every gathering is at Shah Namkeen in Chander Nagar, Delhi. Times are in India Standard Time. Dress codes are suggestions, not rules — come comfortable and celebrated.</p>
+        </header>
+        <ol class="timeline">
+          <li>
+            <div class="timeline__time">
+              <span>Friday</span>
+              <strong>12 March</strong>
+              <em>3:00 – 6:00 pm</em>
+            </div>
+            <article class="event">
+              <p class="event__tag">Mehendi</p>
+              <h3>Orchid Terrace</h3>
+              <p>Colour, music, and a long afternoon in the shade. Henna artists arrive at 3. Chai and chaat from 4. Children are very welcome.</p>
+              <p class="dress">Dress · bright festive, sleeves you can live with once the mehendi dries</p>
+            </article>
+          </li>
+          <li>
+            <div class="timeline__time">
+              <span>Friday</span>
+              <strong>12 March</strong>
+              <em>8:00 pm – midnight</em>
+            </div>
+            <article class="event">
+              <p class="event__tag">Sangeet</p>
+              <h3>Grand Ballroom</h3>
+              <p>Both families have been rehearsing in secret and denying it. Dinner is seated at 8:30. Dancing is not optional, but it is forgiving.</p>
+              <p class="dress">Dress · cocktail, jewel tones, something you can dance in</p>
+            </article>
+          </li>
+          <li>
+            <div class="timeline__time">
+              <span>Saturday</span>
+              <strong>13 March</strong>
+              <em>10:00 am – 12:00 pm</em>
+            </div>
+            <article class="event">
+              <p class="event__tag">Haldi</p>
+              <h3>Garden Pavilion</h3>
+              <p>A morning ceremony in the garden. Yellow is traditional. Stains are part of the photograph, whenever the photographs exist.</p>
+              <p class="dress">Dress · yellow, ivory, or anything you will not miss</p>
+            </article>
+          </li>
+          <li>
+            <div class="timeline__time">
+              <span>Saturday</span>
+              <strong>13 March</strong>
+              <em>5:30 – 9:00 pm</em>
+            </div>
+            <article class="event">
+              <p class="event__tag">Wedding ceremony</p>
+              <h3>Lakeside Mandap</h3>
+              <p>The baraat gathers in the forecourt at 5:30. Pheras begin near sunset. Dinner follows on the lawn. This is the hour to be on time for.</p>
+              <p class="dress">Dress · Indian formal, or black tie if you would rather</p>
+            </article>
+          </li>
+          <li>
+            <div class="timeline__time">
+              <span>Sunday</span>
+              <strong>14 March</strong>
+              <em>7:00 – 11:00 pm</em>
+            </div>
+            <article class="event">
+              <p class="event__tag">Reception</p>
+              <h3>Shah Namkeen</h3>
+              <p>A seated dinner at Shah Namkeen, a short round of speeches, and a band that has been warned about Saarthak’s uncle.</p>
+              <p class="dress">Dress · black tie optional</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="venue" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">03 — The place</p>
+          <h2>Shah Namkeen</h2>
+          <p class="lede">The wedding is at Shah Namkeen. The map marks the shop on SOM Bazaar Road, Indira Park, near Preet Vihar Metro Station, Chander Nagar, New Delhi 110051.</p>
+        </header>
+      </div>
+      <div class="venue-stage">
+        <iframe
+          class="venue-map"
+          title="Map marking Shah Namkeen at 188 Gopal Park, Chander Nagar, Delhi"
+          src="https://maps.google.com/maps?q=Shah%20Namkeen%20188%20Gopal%20Park%20Chander%20Nagar%20Delhi%20110051&amp;z=17&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <aside class="venue-card">
+          <p class="venue-card__pin" aria-hidden="true"><span></span></p>
+          <p class="event__tag">Marked location</p>
+          <h3>Shah Namkeen</h3>
+          <address>
+            C-13, SOM Bazaar Road<br>
+            Indira Park, near Preet Vihar Metro<br>
+            Chander Nagar, New Delhi 110051
+          </address>
+          <p class="venue-card__phone"><a href="tel:+911146509490">011 4650 9490</a></p>
+          <a class="btn btn--fill" href="https://www.google.com/maps/dir/?api=1&amp;destination=Shah%20Namkeen%20188%20Gopal%20Park%20Chander%20Nagar%20Delhi%20110051" target="_blank" rel="noopener noreferrer">Get directions</a>
+        </aside>
+      </div>
+      <div class="wrap">
+        <ul class="facts venue-facts">
+          <li><span>Ceremony</span><strong>Shah Namkeen, Saturday 5:30 pm</strong></li>
+          <li><span>Metro</span><strong>Preet Vihar, then a short walk</strong></li>
+          <li><span>Airport</span><strong>Indira Gandhi International, then a cab east</strong></li>
+          <li><span>Pin</span><strong>110051</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section--tint">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">04 — Photographs</p>
+          <h2>From the IMAGES folder</h2>
+          <p class="lede">All fifteen photographs are here. Select one to open it larger.</p>
+        </header>
+        <div class="gallery">
+          <button class="frame frame--tall" type="button" data-src="IMAGES/web/JSS_1046.JPG" data-title="Together" data-note="A couple at the celebration.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1046.JPG" alt="A couple standing together"></span>
+            <span class="frame__meta"><strong>Together</strong><em>JSS 1046</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1047.JPG" data-title="Side by side" data-note="The same couple, a second frame.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1047.JPG" alt="The couple standing side by side" loading="lazy"></span>
+            <span class="frame__meta"><strong>Side by side</strong><em>JSS 1047</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1048.JPG" data-title="Four together" data-note="Four guests in front of the glass cabinets.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1048.JPG" alt="Four people posing together" loading="lazy"></span>
+            <span class="frame__meta"><strong>Four together</strong><em>JSS 1048</em></span>
+          </button>
+          <button class="frame frame--wide" type="button" data-src="IMAGES/web/JSS_1044.JPG" data-title="Evening lights" data-note="Lanterns along a wall of plants.">
+            <span class="ph ph--photo ph--scene"><img src="IMAGES/web/JSS_1044.JPG" alt="Lanterns along a green wall" loading="lazy"></span>
+            <span class="frame__meta"><strong>Evening lights</strong><em>JSS 1044</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1052.JPG" data-title="By the flowers" data-note="A seat in front of the flower wall.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1052.JPG" alt="A man seated in front of flowers" loading="lazy"></span>
+            <span class="frame__meta"><strong>By the flowers</strong><em>JSS 1052</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1053.JPG" data-title="A quiet seat" data-note="A portrait in a blue chair.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1053.JPG" alt="A man seated in a blue chair" loading="lazy"></span>
+            <span class="frame__meta"><strong>A quiet seat</strong><em>JSS 1053</em></span>
+          </button>
+          <button class="frame frame--tall" type="button" data-src="IMAGES/web/JSS_1054.JPG" data-title="Cream tulle" data-note="The youngest guest in a cream dress.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1054.JPG" alt="A little girl in a cream dress" loading="lazy"></span>
+            <span class="frame__meta"><strong>Cream tulle</strong><em>JSS 1054</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1055.JPG" data-title="A sip" data-note="The same cream dress, mid sip.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1055.JPG" alt="A little girl drinking from a bottle" loading="lazy"></span>
+            <span class="frame__meta"><strong>A sip</strong><em>JSS 1055</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1058.JPG" data-title="Three together" data-note="Two women with the little girl, under the balloons.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1058.JPG" alt="Two women with a little girl" loading="lazy"></span>
+            <span class="frame__meta"><strong>Three together</strong><em>JSS 1058</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1062.JPG" data-title="A hug" data-note="Two women embracing in front of the flowers.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1062.JPG" alt="Two women hugging" loading="lazy"></span>
+            <span class="frame__meta"><strong>A hug</strong><em>JSS 1062</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1065.JPG" data-title="Cheek to cheek" data-note="Another embrace, the other way around.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1065.JPG" alt="Two women posing cheek to cheek" loading="lazy"></span>
+            <span class="frame__meta"><strong>Cheek to cheek</strong><em>JSS 1065</em></span>
+          </button>
+          <button class="frame frame--wide" type="button" data-src="IMAGES/web/JSS_1067.JPG" data-title="With the elders" data-note="Three people in front of the flower wall.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1067.JPG" alt="Three people posing in front of flowers" loading="lazy"></span>
+            <span class="frame__meta"><strong>With the elders</strong><em>JSS 1067</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1068.JPG" data-title="The same evening" data-note="A second frame of the same three.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1068.JPG" alt="The same three people, a second photograph" loading="lazy"></span>
+            <span class="frame__meta"><strong>The same evening</strong><em>JSS 1068</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1069.JPG" data-title="Full length" data-note="The group from head to toe.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1069.JPG" alt="A full-length photograph of three people" loading="lazy"></span>
+            <span class="frame__meta"><strong>Full length</strong><em>JSS 1069</em></span>
+          </button>
+          <button class="frame" type="button" data-src="IMAGES/web/JSS_1071.JPG" data-title="Hand in hand" data-note="The older couple holding hands.">
+            <span class="ph ph--photo"><img src="IMAGES/web/JSS_1071.JPG" alt="An older couple holding hands" loading="lazy"></span>
+            <span class="frame__meta"><strong>Hand in hand</strong><em>JSS 1071</em></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="party" class="section">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">05 — Wedding party</p>
+          <h2>The people beside us</h2>
+        </header>
+        <ul class="party">
+          <li>
+            <div class="ph ph--ink ph--sq"><span class="ph__corners"></span><span class="ph__label">RM</span></div>
+            <h3>Rajesh Mehra</h3>
+            <p>Father of the groom</p>
+          </li>
+          <li>
+            <div class="ph ph--wine ph--sq"><span class="ph__corners"></span><span class="ph__label">LM</span></div>
+            <h3>Leela Mehra</h3>
+            <p>Mother of the groom</p>
+          </li>
+          <li>
+            <div class="ph ph--sage ph--sq"><span class="ph__corners"></span><span class="ph__label">AI</span></div>
+            <h3>Arun Iyer</h3>
+            <p>Father of the bride</p>
+          </li>
+          <li>
+            <div class="ph ph--gold ph--sq"><span class="ph__corners"></span><span class="ph__label">KI</span></div>
+            <h3>Kavita Iyer</h3>
+            <p>Mother of the bride</p>
+          </li>
+          <li>
+            <div class="ph ph--dusk ph--sq"><span class="ph__corners"></span><span class="ph__label">Ro</span></div>
+            <h3>Rohan Mehra</h3>
+            <p>Brother · best man</p>
+          </li>
+          <li>
+            <div class="ph ph--blush ph--sq"><span class="ph__corners"></span><span class="ph__label">DI</span></div>
+            <h3>Diya Iyer</h3>
+            <p>Sister · maid of honour</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="stay" class="section section--tint">
+      <div class="wrap">
+        <header class="section__head">
+          <p class="eyebrow">06 — Stay &amp; arrival</p>
+          <h2>Getting to Shah Namkeen</h2>
+          <p class="lede">The shop is in Chander Nagar, East Delhi. Use the map pin above, or open directions on your phone.</p>
+        </header>
+        <div class="stay">
+          <article>
+            <p class="event__tag">Fly</p>
+            <h3>Indira Gandhi Airport</h3>
+            <p>Code DEL. From the airport, a cab to Shah Namkeen on SOM Bazaar Road, Indira Park, near Preet Vihar Metro Station.</p>
+          </article>
+          <article>
+            <p class="event__tag">Address</p>
+            <h3>C-13, SOM Bazaar Road</h3>
+            <ul>
+              <li><strong>Near</strong> Preet Vihar Metro, Chander Nagar</li>
+              <li><strong>Pin</strong> New Delhi 110051</li>
+              <li><strong>Phone</strong> 011 4650 9490</li>
+            </ul>
+          </article>
+          <article>
+            <p class="event__tag">Arrive</p>
+            <h3>For the ceremony</h3>
+            <ul>
+              <li>Saturday gathering starts at 5:30 pm</li>
+              <li>Reach Shah Namkeen a little earlier</li>
+              <li>The directions button opens the marked pin</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="wrap faq-wrap">
+        <header class="section__head">
+          <p class="eyebrow">07 — Questions</p>
+          <h2>Before you write to the families</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Is this a real wedding?</summary>
+            <p>The wedding venue is Shah Namkeen, C-13, SOM Bazaar Road, Indira Park, near Preet Vihar Metro Station, Chander Nagar, New Delhi 110051. The map on this page marks that shop. The RSVP form stays in this browser only. It does not send a message anywhere.</p>
+          </details>
+          <details>
+            <summary>Are children invited?</summary>
+            <p>Yes at the mehendi and the haldi. The ceremony and reception are easier without the smallest guests. If you need a different plan, say so in the RSVP note.</p>
+          </details>
+          <details>
+            <summary>Can I bring someone?</summary>
+            <p>The invitation is for the people named on it. If a plus-one was intended, the RSVP form lets you count them. When in doubt, call Shah Namkeen on 011 4650 9490.</p>
+          </details>
+          <details>
+            <summary>What should I wear?</summary>
+            <p>Festive colour for Friday afternoon, jewel tones for the sangeet, traditional Indian formal or black tie for the ceremony, and black tie optional on Sunday. The haldi will stain. Plan accordingly and cheerfully.</p>
+          </details>
+          <details>
+            <summary>Where do gifts go?</summary>
+            <p>Your presence is the gift. If you like to send something anyway, the couple would have pointed you to a honeymoon fund. This demo does not take payment.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section section--tint">
+      <div class="wrap rsvp">
+        <header class="section__head">
+          <p class="eyebrow">08 — RSVP</p>
+          <h2>Tell us you are coming</h2>
+          <p class="lede">Kindly reply by 15 January 2027. This form stays on your computer only. Nothing is sent to a server.</p>
+        </header>
+        <form id="rsvp-form" novalidate>
+          <div class="field">
+            <label for="guest-name">Full name</label>
+            <input id="guest-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="guest-email">Email</label>
+            <input id="guest-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          </div>
+          <fieldset>
+            <legend>Will you be there?</legend>
+            <label class="choice"><input type="radio" name="attending" value="yes" checked> Joyfully accepts</label>
+            <label class="choice"><input type="radio" name="attending" value="no"> Regretfully declines</label>
+          </fieldset>
+          <div class="field" id="count-field">
+            <label for="guest-count">Number of guests, including you</label>
+            <input id="guest-count" name="count" type="number" min="1" max="6" value="1">
+          </div>
+          <fieldset id="events-field">
+            <legend>Which gatherings?</legend>
+            <label class="choice"><input type="checkbox" name="events" value="Mehendi" checked> Mehendi · Friday 3 pm</label>
+            <label class="choice"><input type="checkbox" name="events" value="Sangeet" checked> Sangeet · Friday 8 pm</label>
+            <label class="choice"><input type="checkbox" name="events" value="Haldi"> Haldi · Saturday 10 am</label>
+            <label class="choice"><input type="checkbox" name="events" value="Ceremony" checked> Ceremony · Saturday 5:30 pm</label>
+            <label class="choice"><input type="checkbox" name="events" value="Reception" checked> Reception · Sunday 7 pm</label>
+          </fieldset>
+          <div class="field" id="meal-field">
+            <label for="meal">Meal</label>
+            <select id="meal" name="meal">
+              <option>Vegetarian</option>
+              <option>Jain</option>
+              <option>Vegan</option>
+              <option>Non-vegetarian</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="note">A note for the couple</label>
+            <textarea id="note" name="note" rows="4" placeholder="Song requests, travel plans, blessings"></textarea>
+          </div>
+          <p class="form-error" id="form-error" hidden></p>
+          <button class="btn btn--fill" type="submit">Send RSVP</button>
+        </form>
+        <div class="thanks" id="thanks" hidden>
+          <p class="eyebrow">Saved on this device</p>
+          <h3 id="thanks-title">We have your reply</h3>
+          <p id="thanks-body"></p>
+          <button class="btn btn--ghost" id="edit-rsvp" type="button">Edit reply</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="brand brand--footer">S <em>&amp;</em> A</p>
+    <p class="footer__names">Saarthak Mehra &amp; Ananya Iyer</p>
+    <p>13 March 2027 · Shah Namkeen, Delhi</p>
+    <p class="footer__hash">#SaarthakAndAnanya</p>
+    <p class="footer__note">Photographs are from the IMAGES folder. The map pin marks Shah Namkeen on SOM Bazaar Road, near Preet Vihar Metro, Chander Nagar, New Delhi 110051. An RSVP saved here stays on this device.</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+      <div class="lightbox__panel">
+        <img class="lightbox__photo" id="lightbox-photo" alt="">
+      <div class="lightbox__copy">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-note"></p>
+        <button class="btn btn--ghost" id="lightbox-close" type="button">Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
