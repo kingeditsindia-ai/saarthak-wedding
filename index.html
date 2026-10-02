@@ -64,6 +64,7 @@
         </p>
         <div class="hero__actions">
           <a class="btn btn--fill" href="#rsvp">RSVP by 15 January</a>
+          <button class="btn btn--ghost" type="button" data-wish-open>Send wishes</button>
           <a class="btn btn--ghost" href="#schedule">See the weekend</a>
           <button class="btn btn--text" id="cal-btn" type="button">Add to calendar</button>
         </div>
@@ -458,7 +459,7 @@
         <header class="section__head">
           <p class="eyebrow">08 — RSVP</p>
           <h2>Tell us you are coming</h2>
-          <p class="lede">Kindly reply by 15 January 2027. This form stays on your computer only. Nothing is sent to a server.</p>
+          <p class="lede">Kindly reply by 15 January 2027. This form stays on your computer only. Nothing is sent to a server. For a personal note, use Send wishes. It opens WhatsApp with your name and message.</p>
         </header>
         <form id="rsvp-form" novalidate>
           <div class="field">
@@ -501,6 +502,7 @@
           </div>
           <p class="form-error" id="form-error" hidden></p>
           <button class="btn btn--fill" type="submit">Send RSVP</button>
+          <button class="btn btn--ghost" type="button" data-wish-open>Send wishes</button>
         </form>
         <div class="thanks" id="thanks" hidden>
           <p class="eyebrow">Saved on this device</p>
@@ -531,6 +533,25 @@
     </div>
   </dialog>
 
-  <script src="script.js"></script>
+  <dialog class="wish" id="wish-dialog">
+    <form id="wish-form">
+      <p class="eyebrow">Send wishes</p>
+      <h3>A note on WhatsApp</h3>
+      <p class="lede">Add your name and a message. WhatsApp will open with it ready to send.</p>
+      <div class="field">
+        <label for="wish-name">Your name</label>
+        <input id="wish-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+      </div>
+      <div class="field">
+        <label for="wish-message">Your message</label>
+        <textarea id="wish-message" name="message" rows="4" required placeholder="Congratulations and best wishes"></textarea>
+      </div>
+      <p class="form-error" id="wish-error" hidden></p>
+      <div class="hero__actions">
+        <button class="btn btn--fill" type="submit">Open WhatsApp</button>
+        <button class="btn btn--ghost" id="wish-close" type="button">Cancel</button>
+      </div>
+    </form>
+  </dialog>
 </body>
 </html>

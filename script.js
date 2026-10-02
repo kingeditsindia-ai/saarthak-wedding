@@ -246,3 +246,40 @@ document.querySelector("#edit-rsvp").addEventListener("click", () => {
 
 syncAttending();
 showSaved();
+
+const wishDialog = document.querySelector("#wish-dialog");
+const wishForm = document.querySelector("#wish-form");
+const wishError = document.querySelector("#wish-error");
+const wishNumber = "918447159900";
+
+document.querySelectorAll("[data-wish-open]").forEach((button) => {
+  button.addEventListener("click", () => {
+    wishError.hidden = true;
+    wishDialog.showModal();
+  });
+});
+
+document.querySelector("#wish-close").addEventListener("click", () => wishDialog.close());
+
+wishDialog.addEventListener("click", (event) => {
+  if (event.target === wishDialog) wishDialog.close();
+});
+
+wishForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const name = wishForm.name.value.trim();
+  const message = wishForm.message.value.trim();
+  if (!name || !message) {
+    wishError.textContent = "Please add your name and a message.";
+    wishError.hidden = false;
+    return;
+  }
+  const text = `Hello, this is ${name}.\n\n${message}`;
+  const url = `https://wa.me/${wishNumber}?text=${encodeURIComponent(text)}`;
+  const link = document.createElement("a");
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.click();
+  wishDialog.close();
+});

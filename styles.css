@@ -1034,7 +1034,33 @@ form[hidden],
   font-size: 0.92rem;
 }
 
-.lightbox {
+.wish {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  width: min(32rem, calc(100vw - 1.5rem));
+  padding: 1.4rem;
+}
+
+.wish::backdrop {
+  background: rgba(28, 21, 17, 0.62);
+}
+
+.wish form {
+  display: grid;
+  gap: 0.9rem;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.wish h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 1.05;
+  margin: 0;
+}
   border: 0;
   padding: 0;
   background: transparent;
